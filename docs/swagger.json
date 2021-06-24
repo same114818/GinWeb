@@ -1,0 +1,60 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "这里写描述信息",
+        "title": "GinWeb Demo",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "沈洁",
+            "url": "https://www.baidu.com",
+            "email": "same114818@hotmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/knowledge/createDemo": {
+            "post": {
+                "description": "yyyyyyyyyyyyyyy",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "相关接口"
+                ],
+                "summary": "接口2",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/ping": {
+            "get": {
+                "description": "xxxxxxxxxxxx",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "相关接口"
+                ],
+                "summary": "接口1",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}

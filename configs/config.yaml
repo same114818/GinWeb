@@ -1,0 +1,9 @@
+Server:
+  RunMode: debug
+  HttpPort: 8000
+  ReadTimeout: 60
+  WriteTimeout: 60
+Sqlite3Connection:
+  DbType: sqlite3
+  ConnectionString: ./db/knowledgeDb.db
+                 

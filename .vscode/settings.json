@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:GinWeb}/db/knowledgeDb.db",
+            "name": "knowledgeDb",
+            "group": "knowledgeDb"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

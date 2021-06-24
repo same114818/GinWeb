@@ -1,0 +1,40 @@
+info:
+  contact:
+    email: same114818@hotmail.com
+    name: 沈洁
+    url: https://www.baidu.com
+  description: 这里写描述信息
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: GinWeb Demo
+  version: "1.0"
+paths:
+  /knowledge/createDemo:
+    post:
+      consumes:
+      - application/json
+      description: yyyyyyyyyyyyyyy
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: 接口2
+      tags:
+      - 相关接口
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: xxxxxxxxxxxx
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: 接口1
+      tags:
+      - 相关接口
+swagger: "2.0"
