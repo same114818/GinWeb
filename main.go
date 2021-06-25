@@ -5,7 +5,9 @@ import (
 	"GinWeb/db"
 	"GinWeb/global"
 	"GinWeb/routers"
+	"io"
 	"log"
+	"os"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -29,14 +31,19 @@ func init() {
 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html
 func main() {
 	r := gin.Default()
+	//记录日志到文件
+	f, _ := os.Create("./log/gin.log")
+	gin.DefaultWriter = io.MultiWriter(f)
+	//注册路由
 	routers.SetupRouters(r)
 	//fmt.Println(global.DbConnectionSetting.ConnectionString)
 	time.LoadLocation("Asia/Shanghai”")
-
+	//初始化数据库
 	err := db.InitDatabase(global.DbConnectionSetting)
 	if err != nil {
 		log.Fatalf("init.setupDBEngine err: %v", err)
 	}
+
 	r.Run()
 }
 

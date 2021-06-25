@@ -1,0 +1,5 @@
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] GET    /ping                     --> GinWeb/controllers/knowledgeController.GetKnowledges (3 handlers)
+[GIN-debug] POST   /knowledge/createDemo     --> GinWeb/controllers/knowledgeController.CreateKnowledgeMain (3 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
